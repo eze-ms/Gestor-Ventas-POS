@@ -11,10 +11,10 @@ CARACTERÍSTICAS DEL PROYECTO:
   - Integración de Firebase: El proyecto usa Firebase tanto para la autenticación de usuarios como para el manejo de datos a través de Firebase Firestore, lo que permite una experiencia de usuario fluida con sincronización en tiempo real.
 
 ESTRUCTURA DE COMPONENTES:
-  - El proyecto sigue una arquitectura de componentes bien definida, lo que permite la reutilización de componentes. Entre los componentes clave están:
+El proyecto sigue una arquitectura de componentes bien definida, lo que permite la reutilización de componentes. Entre los componentes clave están:
 
       - AdminNav.vue y MainNav.vue: Para la navegación entre las vistas de administración y principales.
-      - ShoppingCart.vue y ShoppingCartItem.vue: Encargados de la visualización y gestión del carrito de compras, incluyendo los productos            agregados por el usuario.
+      - ShoppingCart.vue y ShoppingCartItem.vue: Encargados de la visualización y gestión del carrito de compras, incluyendo los productos agregados por el usuario.
       - Product.vue y ProductCard.vue: Se encargan de mostrar los productos disponibles en la tienda.
       - SalesDetail.vue y SalesView.vue: Implementan el detalle de las ventas, permitiendo a los usuarios visualizar los productos vendidos.
 
