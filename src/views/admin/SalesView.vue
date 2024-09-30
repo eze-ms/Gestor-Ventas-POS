@@ -9,8 +9,8 @@
 </script>
 
 <template>
-    <h1 class="text-3xl font-bold my-10">Resumen de Ventas</h1>
-
+    <h1 class="text-3xl font-bold my-10 text-center lg:text-left">Resumen de Ventas</h1>
+    
     <div class="md:flex md:items-start gap-5">
 
         <div class="md:w-1/2 lg:w-1/3 bg-white flex justify-center p-5">
