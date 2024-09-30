@@ -19,8 +19,8 @@ export const useProductsStore = defineStore('products', () => {
   const selectedCategory = ref(1) // Almacena la categoría seleccionada para filtrado
   const categories = [
     { id: 1, name: 'Sudaderas' },
-    { id: 2, name: 'Zapatillas de tenis' },
-    { id: 3, name: 'Gafas de sol' }
+    { id: 2, name: 'Zapatillas' },
+    { id: 3, name: 'Gafas' }
   ]
 
   //! LEER (Read) - Consulta productos en Firestore y los mantiene sincronizados en tiempo real
