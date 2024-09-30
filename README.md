@@ -13,10 +13,10 @@ CARACTERÍSTICAS DEL PROYECTO:
 ESTRUCTURA DE COMPONENTES:
   - El proyecto sigue una arquitectura de componentes bien definida, lo que permite la reutilización de componentes. Entre los componentes clave están:
 
-      1. AdminNav.vue y MainNav.vue: Para la navegación entre las vistas de administración y principales.
-      2. ShoppingCart.vue y ShoppingCartItem.vue: Encargados de la visualización y gestión del carrito de compras, incluyendo los productos            agregados por el usuario.
-      3. Product.vue y ProductCard.vue: Se encargan de mostrar los productos disponibles en la tienda.
-      4. SalesDetail.vue y SalesView.vue: Implementan el detalle de las ventas, permitiendo a los usuarios visualizar los productos vendidos.
+      - AdminNav.vue y MainNav.vue: Para la navegación entre las vistas de administración y principales.
+      - ShoppingCart.vue y ShoppingCartItem.vue: Encargados de la visualización y gestión del carrito de compras, incluyendo los productos            agregados por el usuario.
+      - Product.vue y ProductCard.vue: Se encargan de mostrar los productos disponibles en la tienda.
+      - SalesDetail.vue y SalesView.vue: Implementan el detalle de las ventas, permitiendo a los usuarios visualizar los productos vendidos.
 
 CUPONES Y DESCUENTOS:
   - CuponForm.vue: Módulo que gestiona la creación, validación y aplicación de cupones. La tienda de cupons.js centraliza el estado de los cupones y su integración con las ventas.
