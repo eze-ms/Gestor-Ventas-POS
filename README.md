@@ -29,7 +29,6 @@
 #### Vista e-comerce 2
 ![Vista zapatillas](./public/img/ecomerce2.png)
 
-*(Reemplazar por capturas reales si se desea)*
 
 ---
 
