@@ -17,7 +17,7 @@
 
 ## 🌐 Demo
 
-🔗 [eze-ms-pos-vue-js.vercel.app](https://eze-ms-pos-vue-js.vercel.app/)
+🔗 [pos-vue-js.vercel.app](https://eze-ms-pos-vue-js.vercel.app/)
 
 ---
 
