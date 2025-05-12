@@ -97,7 +97,7 @@ git clone https://github.com/eze-ms/Gestor-Ventas-POS
 
 ```
 
-### Instalar dependencias del backend
+### Instalar dependencias
 ```bash
 npm install
 ```
