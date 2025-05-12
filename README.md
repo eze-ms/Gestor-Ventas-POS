@@ -14,13 +14,20 @@
 
 ---
 
+
+## 🌐 Demo
+
+🔗 [eze-ms-pos-vue-js.vercel.app](https://eze-ms-pos-vue-js.vercel.app/)
+
+---
+
 ## 🖼️ Capturas
 
-#### Vista principal
-![Vista principal](./src/assets/main.css)
+#### Vista e-comerce 1
+![Vista sudaderas](./public/img/ecomerce1.png)
 
-#### Administración de productos
-![Vista admin](./src/assets/main.css)
+#### Vista e-comerce 2
+![Vista zapatillas](./public/img/ecomerce2.png)
 
 *(Reemplazar por capturas reales si se desea)*
 
@@ -82,6 +89,7 @@ POS-Vue/
 ├── vite.config.js             # Configuración Vite
 ├── vercel.json                # Configuración de despliegue
 
+```
 
 ## 🛠️ Instalación
 
