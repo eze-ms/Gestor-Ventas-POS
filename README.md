@@ -1,42 +1,104 @@
-# POS-Vue.js
-Este proyecto es una aplicación de gestión de punto de venta (POS) desarrollada utilizando Vue.js junto con Pinia para la gestión del estado global. La estructura del proyecto está bien organizada y aprovecha al máximo las capacidades modernas de Vue.js 3, utilizando la Composition API para crear una aplicación dinámica y escalable. A continuación, te detallo las principales características técnicas:
+# POS Vue — Sistema de Punto de Venta con Vue 3 + Firebase
 
-CARACTERÍSTICAS DEL PROYECTO:
-  - Frontend con Vue.js 3: Utiliza la Composition API de Vue 3 para estructurar los componentes, favoreciendo la separación de preocupaciones y la modularidad en el desarrollo.
+![Status](https://img.shields.io/badge/status-live-success?style=flat-square)
+![Vue.js](https://img.shields.io/badge/frontend-Vue.js-42b883?style=flat-square)
+![Firebase](https://img.shields.io/badge/backend-Firebase-orange?style=flat-square)
+![Pinia](https://img.shields.io/badge/state-Pinia-yellow?style=flat-square)
+![TailwindCSS](https://img.shields.io/badge/styling-TailwindCSS-38bdf8?style=flat-square)
 
-  - Gestión del Estado con Pinia: Pinia es utilizado como sistema de gestión de estado, lo que permite un manejo eficiente y centralizado del estado de la aplicación. Las tiendas de productos, carrito de compras, cupones y ventas están implementadas usando Pinia.
+---
 
-  - Configuración de TailwindCSS: El diseño de la interfaz de usuario está soportado por TailwindCSS, lo que facilita la creación de interfaces de usuario responsive y personalizables. Los archivos de configuración tailwind.config.js y postcss.config.js están presentes para el manejo y personalización de estilos.
+## 📄 Descripción
 
-  - Integración de Firebase: El proyecto usa Firebase tanto para la autenticación de usuarios como para el manejo de datos a través de Firebase Firestore, lo que permite una experiencia de usuario fluida con sincronización en tiempo real.
+**POS Vue** es una aplicación de punto de venta (POS) desarrollada con **Vue 3**, **Pinia** y **Firebase**, orientada a comercios físicos o en línea. Permite gestionar productos, ventas, cupones y carrito de compras desde una interfaz moderna, modular y responsive. Está optimizada para escalar y adaptarse a nuevas funcionalidades de forma sencilla.
 
-ESTRUCTURA DE COMPONENTES:
-  - El proyecto sigue una arquitectura de componentes bien definida, lo que permite la reutilización de componentes. Entre los componentes clave están:
+---
 
-      - AdminNav.vue y MainNav.vue: Para la navegación entre las vistas de administración y principales.
-      - ShoppingCart.vue y ShoppingCartItem.vue: Encargados de la visualización y gestión del carrito de compras, incluyendo los productos agregados por el usuario.
-      - Product.vue y ProductCard.vue: Se encargan de mostrar los productos disponibles en la tienda.
-      - SalesDetail.vue y SalesView.vue: Implementan el detalle de las ventas, permitiendo a los usuarios visualizar los productos vendidos.
+## 🖼️ Capturas
 
-CUPONES Y DESCUENTOS:
-  - CuponForm.vue: Módulo que gestiona la creación, validación y aplicación de cupones. La tienda de cupons.js centraliza el estado de los cupones y su integración con las ventas.
+#### Vista principal
+![Vista principal](./src/assets/main.css)
 
-IMÁGENES Y RECURSOS:
-  - Componente useImage.js: Se incluye un composable para gestionar las imágenes cargadas y mostrarlas en el frontend. Las imágenes de los productos se renderizan dinámicamente en los componentes relevantes.
+#### Administración de productos
+![Vista admin](./src/assets/main.css)
 
-BACKEND:
-  - Aunque no se ha proporcionado el código del backend, se asume que existe una integración con una API para la gestión de ventas, productos y cupones. Firebase se utiliza como parte del backend, tanto para la autenticación como para la persistencia de datos.
+*(Reemplazar por capturas reales si se desea)*
 
-FLUJO DE TRABAJO:
-  - Inicio de sesión con Firebase: Los usuarios pueden autenticarse mediante Firebase y gestionar su carrito de compras y productos.
-  - Gestión de productos y ventas: Los usuarios (administradores o vendedores) pueden gestionar productos y ventas a través de la interfaz de administración.
-  - Aplicación de cupones y descuentos: Los cupones se aplican directamente en la venta, permitiendo descuentos personalizados según las condiciones definidas.
-  - Carrito de compras: La aplicación incluye un carrito de compras que permite a los usuarios agregar, eliminar y visualizar productos antes de finalizar la compra.
+---
 
-CONFIGURACIÓN ADICIONAL:
-  - TailwindCSS: Configurado para un diseño responsivo y flexible.
-  - Vite: Usado como herramienta de construcción (build tool) para un desarrollo más rápido y optimizado.
-  - Firebase: Configurado en firebase.js para manejar la autenticación y base de datos en tiempo real.
-  - Uso de API de ventas: Para interactuar con el backend y manejar transacciones, inventarios, y datos de ventas.
+## ✨ Funcionalidades
 
-Este proyecto está optimizado para el uso en un punto de venta físico o en línea, con una arquitectura escalable y modular que puede extenderse con más funcionalidades.
+- Autenticación de usuarios mediante **Firebase Auth**
+- Visualización y compra de productos
+- Gestión de carrito de compras con cantidades dinámicas
+- Aplicación de cupones de descuento
+- Interfaz de administración para productos y ventas
+- Detalle de ventas con información individual
+- Diseño responsive con **Tailwind CSS**
+- Sincronización en tiempo real usando **Firestore**
+
+---
+
+## 💻 Tecnologías Utilizadas
+
+### Frontend
+
+- **Vue.js 3** (Composition API)
+- **Pinia** (gestión global del estado)
+- **Vue Router**
+- **Tailwind CSS**
+- **Vite**
+
+### Backend / Servicios
+
+- **Firebase Authentication**
+- **Firebase Firestore (DB en tiempo real)**
+
+---
+
+## 📋 Requisitos
+
+- Node.js v18 o superior
+- Cuenta de Firebase con Firestore habilitado
+- Git
+
+---
+
+## 🧱 Estructura del Proyecto
+
+```bash
+POS-Vue/
+├── src/
+│   ├── assets/                # Estilos principales
+│   ├── components/            # Componentes de UI (carrito, productos, navegación, etc.)
+│   ├── composables/           # Hooks personalizados (ej: gestión de imágenes)
+│   ├── config/                # Configuración de Firebase
+│   ├── data/                  # Datos estáticos (productos)
+│   ├── helpers/               # Utilidades generales
+│   ├── router/                # Enrutamiento de vistas
+│   ├── stores/                # Estado global (Pinia: productos, carrito, ventas, cupones)
+│   └── views/                 # Vistas principales y de administración
+├── tailwind.config.js         # Configuración Tailwind
+├── vite.config.js             # Configuración Vite
+├── vercel.json                # Configuración de despliegue
+
+
+## 🛠️ Instalación
+
+```bash
+git clone https://github.com/eze-ms/Gestor-Ventas-POS
+
+```
+
+### Instalar dependencias del backend
+```bash
+npm install
+```
+
+### Iniciar servidor
+```bash
+npm run dev
+```
+---
+
+© 2024. Proyecto desarrollado por Ezequiel Macchi Seoane
